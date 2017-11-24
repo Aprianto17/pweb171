@@ -122,3 +122,19 @@ border-radius: 5px;
  }
 
 }
+
+.bloklagu {
+  width: 600px;
+  box-shadow: 5px 5px #5b6783;
+  background-color: #dcd8eb;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
