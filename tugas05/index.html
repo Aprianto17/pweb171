@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <script type="text/javascript"src="js/jquery-3.2.1.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="mt-3">
+
+        <!-- Begin page content Custom -->
+        <h1>Lagu Anak</h1>
+        <div class="jam">
+          <script type="text/javascript" src="js/jam.js"></script>
+        </div>
+        <div class="sidemenu">
+          <ul class="menu">
+            <li><a href="#"onclick="tampilLagu('pelangi')">Pelangi
+                  <span id="cpelangi"></span>
+                </a>
+            </li>
+            <li><a href="#"onclick="tampilLagu('balon')">Balonku
+              <span id="cbalon"></span>
+            </a>
+            </li>
+            <li><a href="#"onclick="tampilLagu('kereta')">Naik Kereta Api
+              <span id="ckereta"></span>
+            </a>
+            </li>
+            <li><a href="#"onclick="tampilLagu('cicak')">Cicak Di Dinding
+              <span id="ccicak"></span>
+            </a>
+            </li>
+          </ul>
+        </div>
+        <div id="info">
+          &lt;&lt;Klik menu untuk melihat lagu
+        </div>
+        <div class="content">
+          <div class="bloklagu" id="pelangi">
+              <div class="boxgambar">
+                <img class="gambarlagu" src="img/pelangi.jpg">
+              </div>
+              <h1 class="judullagu">Pelangi</h1>
+              <p class="tekslagu">
+                Pelangi-pelangi<br>
+                Alangkah indahmu<br>
+                Merah-kuning-hijau<br>
+                Di langit yang biru<br>
+                Pelukismu Agung<br>
+                Siapa gerangan<br>
+                Pelangi-pelangi<br>
+                Ciptaan Tuhan<br>
+              </p>
+          </div>
+          <div class="bloklagu" id="balon">
+            <div class="boxgambar">
+              <img class="gambarlagu" src="img/balon.jpg">
+            </div>
+            <h1 class="judullagu">Balonku</h1>
+            <p class="tekslagu">
+              Balonku ada lima<br>
+              Rupa-rupa warnanya<br>
+              Hijau, kuning, kelabu<br>
+              Merah muda dan biru<br>
+              Meletus balon hijau DOR!<br>
+              Hatiku sangat kacau<br>
+              Balonku tinggal empat<br>
+              Kupegang erat-erat<br>
+            </p>
+          </div>
+          <div class="bloklagu" id="kereta">
+            <div class="boxgambar">
+              <img class="gambarlagu" src="img/kereta.jpg">
+            </div>
+            <h1 class="judullagu">Naik Kereta Api</h1>
+            <p class="tekslagu">
+              Naik kereta api tut tut tut<br>
+              Siapa hendak turut<br>
+              Ke Bandung Surabaya<br>
+              Bolehlah naik dengan percuma<br>
+              Ayo temanku lekas naik<br>
+              Keretaku tak berhenti lama<br>
+            </p>
+          </div>
+          <div class="bloklagu" id="cicak">
+            <div class="boxgambar">
+              <img class="gambarlagu" src="img/cicak.jpg">
+            </div>
+            <h1 class="judullagu">Cicak di Dinding</h1>
+            <p class="tekslagu">
+              Cicak-cicak di dinding<br>
+              Diam diam merayap<br>
+              Datang seekor nyamuk<br>
+              Hap lalu ditangkap<br>
+            </p>
+          </div>
+          </div>
+      </div>
+      <!-- Begin page akhir content Custom -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="mt-3">
+        <h1>Sticky footer with fixed navbar</h1>
+      </div>
+      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
+      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lagu.js"></script>
+  </body>
+</html>

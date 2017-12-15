@@ -1,0 +1,6 @@
++10 tugas selesai
++5 tampilan template
++5 untuk custom template
++2 untuk setiap selector dalam custom style (+36)
+-5 menu non-template
+-6 unutk sisa countent semple template
