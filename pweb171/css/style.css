@@ -1,0 +1,66 @@
+body
+{
+  background-color: #5ede67;
+}
+#isi
+{
+
+}
+#menu
+{
+  
+}
+h1
+{
+  text-align: center;
+}
+
+#jl
+{
+  font-style: oblique;
+}
+
+#judul
+{
+  font-style: normal;
+}
+
+a:link, a:visited, a:active
+{
+  width: 200px;
+  margin: 2px;
+  background-color: #059305;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover
+{
+  width: 200px;
+  margin: 2px;
+  background-color: #c60909;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+img
+{
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lagu
+{
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18px;
+  font-style: italic;
+}
