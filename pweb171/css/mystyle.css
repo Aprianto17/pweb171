@@ -1,0 +1,38 @@
+body
+{
+  background-color: #5eb8ff;
+}
+a:link, a:visited, a:active
+{
+  width: 200px;
+  margin: 2px;
+  background-color: #0088d1;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover
+{
+  width: 200px;
+  margin: 2px;
+  background-color: #005b9f;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+}
+#judul
+{
+  font-family: 'Anton', sans-serif;
+}
+a
+{
+  font-family: 'Pacifico', cursive;
+}
+#jl
+{
+  font-family: 'Dancing Script', cursive;
+}
