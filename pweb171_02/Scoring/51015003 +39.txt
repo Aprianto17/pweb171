@@ -1,0 +1,7 @@
++10 untuk tugas selesai
++5 untuk semua lagu di panggil dari 1 controler
++2 untuk setiap fungsion dalam Controler (+10)
++2 untuk setiap Custom selector dalam Custom css (+14)
++5 untuk templed di luar StartBootstrap
+
+-5 untuk distorsi gambar
