@@ -1,14 +1,29 @@
 <div class="sign-up-form">
-  <h3 class="tittle reg">My Provil <i class="glyphicon glyphicon-user"></i></h3>
+  <h3 class="tittle reg">My Profil <i class="glyphicon glyphicon-user"></i></h3>
+  <!-- <div class="col-md-2"> -->
+  <div class="media-left response-text-left">
+    <a >
+      <?php
+      if ($userid['foto']) {
+        echo "<img class='media-object' src='/asset/images/profil/".$userid['user_ID'].".".$userid['foto']."' />";
+      }else {
+        echo "<img class='media-object' src='/asset/images/sin3.jpg' />";
+      }
+      ?>
+      <!-- <img class="media-object" src="/asset/images/sin3.jpg" /> -->
+    </a>
+  </div>
     <div class="col-md-2">
       <h4 class="a">Nama : </h4>
     </div>
-     <h4 class="tittle"><?= $userid['nama'] ?></h4>
+    <h4 class="tittle"><?=$userid['nama']?></h4>
      <br>
      <div class="col-md-2">
        <h4 class="a">Email : </h4>
      </div>
      <h4 class="tittle"><?=$userid['email']?></h4>
+  <!-- </div> -->
+
      <br>
      <br>
 
@@ -30,7 +45,7 @@
        ?>
    <br>
    <br>
-   
+
 </div>
 <br>
 <br>

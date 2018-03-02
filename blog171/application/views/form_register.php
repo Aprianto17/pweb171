@@ -22,35 +22,43 @@
          <h3 class="tittle reg">Personal Information <i class="glyphicon glyphicon-user"></i></h3>
 
 
-         <form  action="/user/reg_submit" method="post">
+         <form  action="/user/reg_submit" method="post" enctype="multipart/form-data" >
 
            <div class="col-md-4">
              <h4 class="a">Alamat Email : </h4>
            </div>
            <div class="col-md-5">
-             <input type="email" class="form-control" id="exampleInputEmail1" name="email"><br>
+             <input type="email" class="form-control" id="exampleInputEmail1" name="email" required= "data kosong"><br>
            </div>
 
            <div class="col-md-4">
              <h4 class="a">Nama :</h4>
            </div>
            <div class="col-md-5">
-             <input type="text" class="form-control" id="exampleInputEmail1" name="nama"><br>
+             <input type="text" class="form-control" id="exampleInputEmail1" name="nama" required= "data kosong" ><br>
            </div>
 
            <div class="col-md-4">
              <h4 class="a">Password : </h4>
            </div>
            <div class="col-md-5">
-             <input type="password" class="form-control" id="exampleInputEmail1" name="pass1"><br>
+             <input type="password" class="form-control" id="exampleInputEmail1" name="pass1" required= "data kosong"><br>
            </div>
 
            <div class="col-md-4">
              <h4 class="a">Verifikasi Password : </h4>
            </div>
            <div class="col-md-5">
-             <input type="password" class="form-control" id="exampleInputEmail1" name="pass2"><br>
+             <input type="password" class="form-control" id="exampleInputEmail1" name="pass2" required= "data kosong" ><br>
            </div>
+
+           <div class="col-md-4">
+             <h4 class="a" for="exampleFormControlFile1" >Upload Foto Profil : </h4>
+           </div>
+           <div class="col-md-5">
+             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="foto"><br>
+           </div>
+
            <input type="submit" value="Register" >
          </form>
 

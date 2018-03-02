@@ -10,7 +10,7 @@ class Blog_model extends CI_Model {
   * data satu blog berdasarkan blog_ID
   */
   public function blog( $blog_ID ){
-    $query = $this->db->query("SELECT * FROM blogs WHERE blog_ID='".$blog_ID."'");
+    $query = $this->db->query("SELECT * FROM blogs INNER JOIN users USING(user_ID) WHERE blog_ID='".$blog_ID."'");
     return $query->row_array();
   }
 
@@ -48,7 +48,6 @@ class Blog_model extends CI_Model {
               'comentar' => $this->input->post('comentar'),
               'blog_ID' => $this->session->bid,
               'user_ID' => $this->session->uid,
-              'nama' => $this->input->post('nama'),
               'tanggal' => date('Y-m-d H:i:s')
             ];
 
@@ -87,9 +86,6 @@ class Blog_model extends CI_Model {
   }
 
   public function edit($blog_id){
-
-    //ekstension gambar
-  //  $ext = pathinfo($_FILES['foto']['name'],PATHINFO_EXTENSION);
     // menyiapkan data
     $data = [
               'blog_ID' => $blog_id,
@@ -104,5 +100,23 @@ class Blog_model extends CI_Model {
     // simpan ke database dalam tabel 'blogs'
     $this->db->update( 'blogs', $data );
   }
+
+
+  public function comenbyid($blog_ID){
+    $query = $this->db->query("SELECT * FROM `comens` INNER JOIN `users` USING (user_ID) 
+                                WHERE comens.blog_ID = '".$blog_ID."'
+                                ORDER BY tanggal DESC");
+    return $query->result_array();
+  }
+
+
+    public function userbyid($user_ID){
+      $sql = "SELECT blogs.tanggal,blogs.judul,blogs.blog_ID FROM users
+              INNER JOIN blogs USING (user_ID)
+              WHERE users.user_ID = '".$user_ID."'
+              ORDER BY tanggal DESC";
+      $query = $this->db->query( $sql );
+      return $query->result_array();
+    }
 
 }

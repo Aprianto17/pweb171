@@ -3,9 +3,7 @@
       <div class="h-top" id="home" role="navigation">
        <div class="top-header">
           <ul class="cl-effect-16 top-nag">
-            <li><a href="<?php echo site_url('welcome/menu1') ?>" data-hover="About">About</a></li>
-            <li><a href="services.html" data-hover="SERVICES">SERVICES</a></li>
-            <li><a href="/welcome/contact" data-hover="CONTACT">Contact</a></li>
+            <li><a href="/welcome/contact" data-hover="ABOUT">About</a></li>
             <?php
             if (!isset($this->session->uid)){
              ?>
@@ -17,7 +15,7 @@
 
               if( isset( $this->session->uid ) ){
                 echo  "
-                        <li><a href='/user/profil/". $this->session->uid ."'data-hover='Provil'>".'Provil'."</a></li>
+                        <li><a href='/user/profil/". $this->session->uid ."'data-hover='Profil'>".'Profil'."</a></li>
                         <li><a href='/signout' data-hover='Signout' >signout</a></li>
                       ";
               }
@@ -26,14 +24,14 @@
 
 
           </ul>
-          <div class="search-box">
+          <!-- <div class="search-box">
               <div class="b-search">
-                <form action="/blog/search"  >
-                    <input type="text" name="search" value="Search" >
-                    <input type="submit" value="">
+                <form action="/blog/search/">
+                    <input type="text" name="search" placeholder="Search">
+                    <input type="submit" value="Search">
                 </form>
               </div>
-            </div>
+            </div> -->
 
           <div class="clearfix"></div>
         </div>
@@ -52,8 +50,7 @@
              <li><a class="active" href="/" data-hover="HOME">Home</a></li>
              <li><a href="/blog/post" data-hover="Post">Post</a></li>
 
-             <li><a href="services.html" data-hover="Services">Services</a></li>
-             <li><a href="/welcome/contact" data-hover="CONTACT">Contact</a></li>
+             <li><a href="/welcome/contact" data-hover="ABOUT">About</a></li>
            </ul>
            <!-- script-for-nav -->
            <script>
@@ -65,9 +62,9 @@
            </script>
          <!-- script-for-nav -->
            <ul class="side-icons">
-               <li><a class="fb" href="#"></a></li>
-               <li><a class="twitt" href="#"></a></li>
-               <li><a class="goog" href="#"></a></li>
+               <li><a class="fb" href="https://www.facebook.com/"></a></li>
+               <li><a class="twitt" href="https://plus.google.com/discover?hl=id"></a></li>
+               <li><a class="goog" href="https://twitter.com/?lang=id"></a></li>
                <li><a class="drib" href="#"></a></li>
               </ul>
            </div>

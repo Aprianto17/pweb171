@@ -27,7 +27,11 @@ class User extends CI_Controller {
 
     public function regsubmit(){
       $this->user_model->register();
+      $ext = pathinfo($_FILES['foto']['name'],PATHINFO_EXTENSION);
+      $file = "./asset/images/profil/".$this->session->uid.".".$ext;
+      move_uploaded_file($_FILES['foto']['tmp_name'],$file);
       redirect("user/login");
+      $this->session->uid = $user['user_ID'];
     }
 
     public function signin(){
@@ -53,6 +57,7 @@ class User extends CI_Controller {
     } else {
       // user tidak ditemukan
       echo "TIDAK TERDAFTAR";
+
     }
 
   }

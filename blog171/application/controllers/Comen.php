@@ -30,6 +30,7 @@ class Comen extends CI_Controller {
   public function submit()  {
     if(isset($this->session->uid)){
       $this->comen_model->submit();
+      // $data['blog'] = $this->blog_model->blog( $blog_ID );
       redirect('/');
   }
     else {

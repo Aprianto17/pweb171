@@ -20,14 +20,14 @@
          <h4>Address Location</h4>
              <ul class="bottom">
            <li><i class="glyphicon glyphicon-map-marker"></i>2901 Glassgow Road, WA 98122-1090 </li>
-         <li><i class="glyphicon glyphicon-earphone"></i>phone: (888) 123-456-7899 </li>
+         <li><i class="glyphicon glyphicon-earphone"></i>phone: (+62) 852-243-3523 </li>
          </ul>
       </div>
     <div class="clearfix"> </div>
    </div>
     </div>
 <div class="copy">
-  <p>&copy; 2016 Blogger. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
+  <p>&copy; 2016 Blogger. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> & <a href="https://www.instagram.com/aprianto088/">Aprianto</a></p>
 </div>
 <div class="clearfix"> </div>
 </div>

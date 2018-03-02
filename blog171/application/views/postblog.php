@@ -5,11 +5,11 @@
          <h1>Tulis Post</h1>
          <br>
          <label for="name" class="sr-only">Judul Post</label>
-         <input type="text" class="form-control" placeholder="Judul Post" name="judul">
+         <input type="text" class="form-control" placeholder="Judul Post" name="judul" required= "data kosong" >
        </div>
        <div class="form-group">
          <label for="message" class="sr-only">Isi Post</label>
-         <textarea cols="30" rows="10" class="form-control" placeholder="Isi Post" name="isi"></textarea>
+         <textarea cols="30" rows="10" class="form-control" placeholder="Isi Post" name="isi" required= "data kosong"></textarea>
        </div>
        <div class="form-group">
          <input type="submit" class="btn btn-primary btn-lg" value="Post">

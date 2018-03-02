@@ -11,21 +11,31 @@ class User_model extends CI_Model {
   public function register(){
     // membuat user_ID otomatis
     // menggunakan UNIX Timestamp --> date('U')
+    if (empty( $this->input->post('email'))){
+      // $this->load->template('form_register');
+        echo "LOGIN FAILED";
+        redirect("user/reg");
+    }else{
     $nick = substr( $this->input->post('nama'), 0 , 3 );
     // 3 huruf pertama dari nama user
     $user_id = "U-".$nick.date('U');
 
+    //ekstension gambar
+    $ext = pathinfo($_FILES['foto']['name'],PATHINFO_EXTENSION);
     // menyiapkan data
     $data = [
             'user_ID' => $user_id,
             'nama' => $this->input->post('nama'),
             'email' => $this->input->post('email'),
             'password' => md5( $this->input->post('pass1') ),
-            'tgl_registrasi' => date('Y-m-d H:i:s')
+            'tgl_registrasi' => date('Y-m-d H:i:s'),
+            'foto' => $ext
           ];
-
+    // simpan data ke dalam session
+    $this->session->uid = $user_id;
     // simpan ke database dalam tabel 'users'
     $this->db->insert( 'users', $data );
+  }
   }
 
   public function user( $email ){
@@ -56,5 +66,5 @@ class User_model extends CI_Model {
     $query = $this->db->query( $sql );
     return $query->row_array();
 
-}
+  }
 }

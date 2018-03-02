@@ -10,7 +10,7 @@
        </div>
        <div class="form-group">
          <label for="message" class="sr-only">Isi Post</label>
-         <textarea cols="30" rows="10" class="form-control" placeholder="Isi Post" name="isi" value="<?=$isi?>" ></textarea>
+         <textarea cols="30" rows="10" class="form-control" placeholder="Isi Post" name="isi" required= "data kosong"  ><?=$isi?></textarea>
        </div>
        <div class="form-group">
          <input  type="submit" class="btn btn-primary btn-lg" value="Post" >

@@ -16,14 +16,17 @@ class Blog extends CI_Controller {
     $this->session->bid = $blog['blog_ID'];
 
     $data['blog'] = $this->blog_model->blog( $blog_ID );
+
+    $data['comen'] = $this->blog_model->comenbyid($blog_ID);
+
     $this->load->template( 'baca_blog', $data );
 
 	}
 
-  public function subcom()  {
-    $this->blog_model->subcom();
-    redirect('detail_blog');
-  }
+  // public function subcom()  {
+  //   $this->blog_model->subcom();
+  //   redirect('detail_blog');
+  // }
 
 
 
@@ -65,19 +68,11 @@ class Blog extends CI_Controller {
    redirect('/');
  }
 
-
-
  public function search(){
    // $search = $this->input->post('search');
    // $this->session->sea = $search;
    $this->load->template('search');
    // $this->load->template('editblog',$data);
  }
-
-
-
-
-
-
 
 }

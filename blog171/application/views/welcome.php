@@ -3,7 +3,7 @@
 <div class="login">
   <div class="login-grids">
     <div class="col-md-6 log">
-         <h3 class="tittle">Login <i class="glyphicon glyphicon-lock"></i></h3>
+         <h3 class="tittle">Login <i class="glyphicon glyphicon-lock" ></i></h3>
          <p>Welcome, please enter the following to continue.</p>
          <p>If you have previously Login with us, <a href="#">click here</a></p>
          <form action="/user/signin" method="post">
@@ -23,15 +23,8 @@
 
            <input type="submit" value="Sign In" >
 
-           <!-- <form action="/user/signin" method="post">
-             Email: <br>
-             Password: <br>
-
-           </form> -->
-
-
          </form>
-        <a href="#">Forgot Password ?</a>
+
     </div>
     <div class="col-md-6 login-right">
          <h3 class="tittle">New Registration <i class="glyphicon glyphicon-file"></i></h3>
